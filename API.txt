@@ -1,0 +1,3 @@
+GET:Server ke sath data fetch karwana ho tab use karte hai 
+POST:Server per jab data send karna ho tab 
+PATCH:Server per jo data already present hai uko update karna ho toh
