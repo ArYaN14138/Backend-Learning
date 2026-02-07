@@ -21,6 +21,44 @@ app.post('/Notes',(req,res)=>{
     
 }) 
 
+app.get('/Notes',(req,res)=>{
+    res.status(200).json({
+
+        message:"Notes fetched successfully",
+        Notes:Notes//
+
+    })
+})
+
+//delete/Notes/:index.    at the place of index we put the index walue from the array and it is dynamic in nature 
+app.delete('/Notes/:index',(req,res)=>{
+
+    const index=req.params.index;
+    //params is used to get the index of  the node which we want to delete
+
+   delete Notes[index];//to delete the node at the given index
+   // Notes.splice(index,1);
+    res.status(200).json({
+        message:"note deleted successfully",
+        Notes:Notes
+    })
+})
+
+app.patch('/Note/:index',(req,res)=>{
+
+    const index=req.params.index;
+    const description=req.body.description;
+
+    Notes[index].description=description;
+
+
+    res.status(200).json({
+        message:"note is updated successfully",
+        Notes:Notes
+    })
+
+})
+
 module.exports=app;
 
 /*

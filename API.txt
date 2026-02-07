@@ -1,3 +1,11 @@
 GET:Server ke sath data fetch karwana ho tab use karte hai 
 POST:Server per jab data send karna ho tab 
 PATCH:Server per jo data already present hai uko update karna ho toh
+DELETE: Server per jo data hai agar usko delete karna ho toh 
+
+
+JO app.jsx file hai uska main kaam hai sever ko create karna 
+
+jo Server.js(Root folder mei rahti hai ye file) file hai uska kaam hai server ko start karna 
+
+
